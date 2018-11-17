@@ -23,6 +23,8 @@ public class Home extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //Floating action bar code
+        /*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +33,7 @@ public class Home extends AppCompatActivity
                         .setAction("Action", null).show();
             }
         });
+        */
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -40,6 +43,8 @@ public class Home extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeFragment()).commit();
     }
 
     @Override
@@ -80,18 +85,16 @@ public class Home extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        if (id == R.id.home) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeFragment()).commit();
+        } else if (id == R.id.profile) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, new ProfileFragment()).commit();
+        } else if (id == R.id.history) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, new HistoryFragment()).commit();
+        } else if (id == R.id.settings) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, new SettingsFragment()).commit();
+        } else if (id == R.id.controls) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, new ControlFragment()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
