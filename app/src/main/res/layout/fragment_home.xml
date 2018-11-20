@@ -1,13 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Home Fragment"
-        android:textAlignment="center"
+        android:id="@+id/Explore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="20dp"
+        android:text="Explore"
+
         android:textSize="30sp"
-        android:gravity="center"/>
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/featured"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Explore"
+        android:layout_marginTop="81dp"
+        android:text="Featured"
+
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/recent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/Explore"
+
+        android:layout_marginBottom="153dp"
+        android:text="Recent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/Explore"
+        android:layout_marginTop="276dp"
+        android:text="Categories "
+
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="119dp"
+        android:layout_height="115dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="133dp"
+        android:src="@drawable/public_speaking"
+        android:scaleType="centerCrop"
+        android:clickable="true"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="119dp"
+        android:layout_height="115dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        app:srcCompat="@drawable/ic_menu_gallery"
+        android:src="@drawable/spider_phobia"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="119dp"
+        android:layout_height="115dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView3"
+        app:srcCompat="@drawable/ic_menu_gallery"
+        android:src="@drawable/guns"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/cat2"
+        android:layout_width="119dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/cat1"
+        android:layout_centerHorizontal="true"
+        android:text="Top USA"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/cat1"
+        android:layout_width="119dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_marginBottom="240dp"
+        android:text="Top 10"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/cat3"
+        android:layout_width="119dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/cat2"
+        android:layout_toEndOf="@+id/imageView3"
+        android:text="PTSD"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/cat6"
+        android:layout_width="119dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/cat2"
+        android:layout_toEndOf="@+id/imageView3"
+        android:text="Phobias"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/rec2"
+        android:layout_width="119dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/rec1"
+        android:layout_centerHorizontal="true"
+        android:text="Clowns"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/rec4"
+        android:layout_width="119dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_below="@+id/rec2"
+        android:text="Dolls"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/rec3"
+        android:layout_width="119dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/rec2"
+        android:layout_toEndOf="@+id/imageView3"
+        android:text="Heights"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/rec1"
+        android:layout_width="119dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_marginBottom="98dp"
+        android:text="Social Anxiety"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        tools:text="Public Speaking" />
+
+    <TextView
+        android:id="@+id/cat8"
+        android:layout_width="119dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_below="@+id/cat2"
+        android:text="Social Anxiety"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/cat4"
+        android:layout_width="119dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/cat2"
+        android:layout_centerHorizontal="true"
+        android:text="Top International"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
 
 </RelativeLayout>
