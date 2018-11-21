@@ -1,5 +1,6 @@
 package com.example.ahmednaeem.holosimulator;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -16,6 +17,7 @@ import android.widget.ImageView;
 
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    MenuItem checkButton;
 
 
     @Override
@@ -24,6 +26,8 @@ public class Home extends AppCompatActivity
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
 
         //Floating action bar code
         /*
@@ -63,6 +67,8 @@ public class Home extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.home, menu);
+        checkButton = menu.findItem(R.id.checkMark);
+        checkButton.setVisible(false);
         return true;
     }
 
@@ -74,12 +80,20 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.checkMark) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, new ResultsFragment()).commit();
+            checkButton.setVisible(false);
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void startSim(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new SimulationFragment()).commit();
+        checkButton.setVisible(true);
+    }
+
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
