@@ -18,7 +18,7 @@ Some functianlity is not implemented. Main purpose was to focus on UI of applica
              ``` $ git clone https://github.com/amuna/HoloSimulator.git ```
 3. Open Android Studio
 4. File > New > Import Project
-5. Select the project folder ../../Final Project
+5. Select the project folder ../../HoloSimulator
 6. Run in emulator: Pixel 2 API 22 for device emulation
 
 Note: Important to clone to your laptop via git shell to avoid first time build issues for .iml/gradle build files (Clean and re-build)
