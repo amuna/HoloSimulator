@@ -94,6 +94,10 @@ public class Home extends AppCompatActivity
         checkButton.setVisible(true);
     }
 
+    public void exitResult(View view) {
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeFragment()).commit();
+    }
+
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override

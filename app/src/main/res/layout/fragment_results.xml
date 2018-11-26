@@ -222,7 +222,8 @@
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="99dp"
-        android:text="NEXT" />
+        android:text="NEXT"
+        android:onClick="exitResult"/>
 
     <Button
         android:id="@+id/Menubtn"
