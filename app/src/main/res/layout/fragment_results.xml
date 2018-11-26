@@ -211,7 +211,7 @@
         android:layout_marginBottom="10dp"
         android:text="@string/level_9"
         android:textSize="18sp" />
-
+<!--
     <Button
         android:id="@+id/Nextbtn"
         android:layout_width="wrap_content"
@@ -247,5 +247,44 @@
         android:layout_marginStart="29dp"
         android:layout_marginLeft="29dp"
         android:text="REPLAY" />
+-->
+    <ImageButton
+        android:id="@+id/Nextbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="99dp"
+        android:text="NEXT"
+        android:onClick="exitResult"
+        android:src="@drawable/ic_navigate_next" />
+
+    <ImageButton
+        android:id="@+id/Menubtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="233dp"
+        android:text="MENU"
+        android:src="@drawable/ic_menu" />
+
+    <ImageButton
+        android:id="@+id/Replaybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ratingBar2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="29dp"
+        android:text="REPLAY"
+        android:src="@drawable/ic_replay" />
 
 </RelativeLayout>

@@ -46,38 +46,30 @@
         android:id="@+id/Informationtxt"
         android:layout_width="96dp"
         android:layout_height="22dp"
-        android:layout_below="@+id/divider"
         android:layout_alignStart="@+id/Profiletxt"
-        android:layout_marginStart="-9dp"
-        android:layout_marginTop="0dp"
+        android:layout_below="@+id/Profiletxt"
         android:text="@string/information"
-        android:textSize="18sp"
-        android:layout_alignLeft="@+id/Profiletxt"
-        android:layout_marginLeft="-9dp" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/Usernametxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="121dp"
         android:layout_marginLeft="121dp"
+        android:layout_marginStart="121dp"
         android:layout_marginTop="106dp"
-        android:text="@string/username" />
+        android:text="adam.adam" />
 
     <TextView
         android:id="@+id/Emailtxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/Usernametxt"
         android:layout_alignBottom="@+id/imageView6"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="-1dp"
-        android:text="@string/e_mail"
-        android:layout_alignRight="@+id/Usernametxt"
-        android:layout_marginRight="19dp" />
+        android:layout_alignStart="@+id/Usernametxt"
+        android:text="adam@adam.ca" />
 
     <View
         android:id="@+id/divider2"
@@ -95,11 +87,10 @@
         android:id="@+id/Statisticstxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/divider2"
-        android:layout_alignParentStart="true"
+        android:layout_alignStart="@+id/Profiletxt"
+        android:layout_alignTop="@+id/divider2"
         android:text="@string/statistics"
-        android:textSize="18sp"
-        android:layout_alignParentLeft="true" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/Troundstxt"
@@ -237,17 +228,9 @@
         android:id="@+id/Leveltxt"
         android:layout_width="54dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="330dp"
-        android:layout_marginRight="330dp"
-        android:layout_marginBottom="189dp"
+        android:layout_alignBottom="@+id/Avgscoretxt"
+        android:layout_alignStart="@+id/Profiletxt"
         android:text="Level"
-        android:textSize="18sp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="0dp" />
+        android:textSize="18sp" />
 
 </RelativeLayout>
